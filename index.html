@@ -84,7 +84,8 @@ $(document).ready(function () {
 var menuYloc = $("#mynav").offset().top-110; //此ID为随着屏幕滚动div的ID
 $(window).scroll(function () {
 var offsetTop = menuYloc + $(window).scrollTop() + "px";
-$("#mynav").animate({ top: offsetTop }, { duration: 600, queue: false }); //此ID为随着屏幕滚动div的ID
+//$("#mynav").css("top",offsetTop);
+$("#mynav").animate({ top: offsetTop }, { duration: 50, queue: false }); //此ID为随着屏幕滚动div的ID
 });
 });
  </script>
