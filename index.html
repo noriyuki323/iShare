@@ -23,16 +23,16 @@
       </blockquote> 
      </div> 
 	 
-	 <div class="col-md-2 column" style="background:white;">
+	 <div class="col-md-2 column" style="background-color:white; " id="mynav">
 					<ul class="nav nav-tabs nav-stacked">
 						<li id="navall">
-							 <a href="#">所有有趣的事</a>
+							 <a href="javascript:void(0)">所有有趣的事</a>
 						</li>
 						<li id="navlike">
-							 <a href="#">只显示我收藏的</a>
+							 <a href="javascript:void(0)">只显示我收藏的</a>
 						</li>
 						<li id="navcreate">
-							 <a href="#">我要分享</a>
+							 <a href="javascript:void(0)">我要分享</a>
 						</li>
 
 						
@@ -61,10 +61,34 @@
 				
 				
     </div> 
+	
+ 
 
    </div> 
+
    
   </div>   
+  
+     	<nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+<div class="col-md-12" style="text-align: center;background:white">
+                    <p>Copyright © 2018.
+					<br>
+                        <a href="https://incentive.nebulas.io/signup.html?invite=iRGAj" target="_blank">点我发布DAPP获取100NAS</a>
+                    </p>
+                    
+                </div>
+				
+			</nav>  
+			 <script>
+$(document).ready(function () {
+var menuYloc = $("#mynav").offset().top-110; //此ID为随着屏幕滚动div的ID
+$(window).scroll(function () {
+var offsetTop = menuYloc + $(window).scrollTop() + "px";
+$("#mynav").animate({ top: offsetTop }, { duration: 600, queue: false }); //此ID为随着屏幕滚动div的ID
+});
+});
+ </script>
   	
  </body>
+
 </html>
