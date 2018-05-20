@@ -21,7 +21,7 @@ $(function() {
             listener: function(resp) {
                 //console.log(JSON.stringify(resp.result));
 				if(resp.result == ""){
-					$("#searchresult").html('<div class="panel-body">暂时没有记录</div>');
+					$("#searchresult").html('<div class="panel-body" >暂时没有记录</div>');
 					return;
 				}
                 var myArr = JSON.parse(resp.result);
